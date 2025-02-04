@@ -1,0 +1,129 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color:pink;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+.background {
+  background-image: url('assets/Hearts.png'); /* Replace with actual image URL */
+  background-size: cover; /* Ensures the image covers the whole div */
+  background-position: center; /* Centers the image */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  display: flex; /* Allows centering of text */
+  align-items: center; /* Centers vertically */
+  justify-content: center; /* Centers horizontally */
+  color: rgb(255, 81, 243); /* Ensures text is visible */
+  text-align: center; /* Centers text */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+}
+
+.button-container {
+  margin-top: 20px; /* Add space between question and buttons */
+  
+}
+
+
+
+.yes, .no {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.yes {
+  background-color: #4CAF50;  /* Green */
+  color: white;
+}
+
+.no {
+  background-color: #f44336;  /* Red */
+  color: white;
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.header {
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 40px
+
+
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  background-size: 100vw 100vh;
+  width: 500px ;
+  height: 500px;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #fc6464;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
